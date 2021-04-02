@@ -4,4 +4,12 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+#nav-small {
+  background-color: black;
+}
+
+#nav-small a {
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */
