@@ -1,11 +1,33 @@
+@import 'var';
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 #nav-small{
-    background-color: black;
-    a{
-        color: white;
+    .col-12{
+        background-color: black;
+        text-align: right;
+        a{
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            margin: 0em 1em;
+            text-decoration: none;
+            &:hover{
+                color: $font_clr;
+            }
+        }
+    }
+}
+#nav-big{
+    background-color: red;
+    .col-4{
+        img{
+            filter: invert();
+        }
     }
 }
