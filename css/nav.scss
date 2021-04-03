@@ -23,36 +23,76 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .col-3.logo{
+    position: relative;
+
+    .col-5.logo{
         padding: 1rem;
         padding-left: 2rem;
     }
-    .col-6.nav{
+    .col-4.nav{
         color: white;
+        margin-left: -2rem;
+        padding: 0;
         ul{
+            padding-left: 0;
             display: flex;
             list-style: none;
             justify-content: center;
             align-items: center;
             margin-top: 0;
             margin-bottom: 0;
-            width: 60%;
             li{
-                padding: 1rem;
+                padding: 2.3rem 1rem;
+                text-align: center;
+                display: block;
+                line-height: 5px;
+                height: 60px;
+                margin: 0rem 1rem;
                 cursor: pointer;
                 img{
                     margin-left: 0.5rem;
-                    animation: okret 0.3s ease-in-out;
-                    animation-fill-mode: forwards;
                 }
             }
         }
     }
 }
-#gear{
-    background-color: $nav_gray;
-    height: 2em;
+.col-3.login{
+
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-stretch: extra-condensed;
+    div{
+        color: white;
+        cursor: pointer;
+        img{
+            margin-left: 0.3rem;
+        }
+        &:hover{
+            filter: invert(0.4);
+        }
+    }
+    #sign{
+        padding: 0rem 0.2rem;
+        cursor: pointer;
+        color: $orange_btn;
+        border: 2px solid $orange_btn;
+        margin-bottom: 0;
+        &:hover{
+            background-color: $orange_btn;
+            color: black;
+        }
+    }
+}
+#gg,#soft{
+    transition: 0.3s all ease;
+}
+#gg-menu{
+    background-color: $nav_gray;
+    height: 3.3em;
+    display: none;
     justify-content: center;
     align-items: center;
     a{
@@ -60,4 +100,25 @@
         text-decoration: none;
         color: white;
     }
+}
+#gg img,#soft img{
+    transition: 0.3s ease;
+}
+#soft-menu{
+    background-color: $nav_gray;
+    height: 3.3em;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    a{
+        padding: 2em;
+        text-decoration: none;
+        color: white;
+    }
+}
+.okret{
+    transform: rotate(180deg);
+}
+.bg-nav{
+    background-color: $nav_gray;
 }
