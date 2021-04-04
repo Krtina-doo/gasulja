@@ -1,3 +1,9 @@
+footer {
+  position: relative;
+  background-color: #121212;
+  border-top: 12px solid #121212;
+}
+
 footer #link_name {
   color: white !important;
   font-size: 1rem;
@@ -14,5 +20,31 @@ footer #links a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+aside {
+  background-color: #121212;
+  border-bottom: 1px solid #383838;
+  display: block;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+aside .container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  max-width: 1540px;
+}
+
+aside .container .flag {
+  vertical-align: middle;
+  width: 1vw;
+}
+
+aside .container .flag .text-my-own-color {
+  color: #383838 !important;
 }
 /*# sourceMappingURL=footer.css.map */
