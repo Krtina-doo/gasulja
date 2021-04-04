@@ -11,7 +11,7 @@
   font-stretch: expanded;
   font-weight: 700;
   margin: 0rem 0.8rem;
- text-decoration: none;
+  text-decoration: none;
 }
 
 #nav-small .col-12 a:hover {
@@ -194,6 +194,10 @@ footer #links a {
   display: flex;
 }
 
+footer #links a:hover {
+  color: white !important;
+}
+
 aside {
   background-color: #121212;
   border-bottom: 1px solid #383838;
@@ -227,3 +231,4 @@ aside .container .flag .text-my-own-color {
           box-sizing: border-box;
   line-height: normal;
 }
+/*# sourceMappingURL=main.css.map */
