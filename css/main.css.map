@@ -5,6 +5,7 @@
         "main.scss",
         "nav.scss",
         "var.scss",
+        "nav.scss",
         "footer.scss"
     ],
     "names": [],
