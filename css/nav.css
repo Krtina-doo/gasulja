@@ -1,3 +1,9 @@
+@media screen and (max-width: 1130px) {
+  #nav-small {
+    display: none;
+  }
+}
+
 #nav-small .col-12 {
   background-color: black;
   text-align: right;
@@ -25,15 +31,16 @@
   position: relative;
 }
 
-#nav-big .col-5.logo {
-  padding: 1rem;
-  padding-left: 2rem;
-}
-
 #nav-big .col-4.nav {
   color: white;
-  margin-left: -2rem;
+  margin-left: 2rem;
   padding: 0;
+}
+
+@media screen and (max-width: 1130px) {
+  #nav-big .col-4.nav {
+    display: none;
+  }
 }
 
 #nav-big .col-4.nav ul {
@@ -60,29 +67,48 @@
   margin-left: 0.5rem;
 }
 
-.col-3.login {
+.col-6.login {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   font-size: 0.8rem;
   font-weight: 600;
-  font-stretch: extra-condensed;
+  margin-left: auto;
 }
 
-.col-3.login div {
+.col-6.login div {
   color: white;
   cursor: pointer;
 }
 
-.col-3.login div img {
+.col-6.login div p {
+  display: inline;
+}
+
+.col-6.login div img {
   margin-left: 0.3rem;
 }
 
-.col-3.login div:hover {
+.col-6.login div:hover {
   filter: invert(0.4);
 }
 
-.col-3.login #sign {
+@media screen and (max-width: 1130px) {
+  .col-6.login div .ikone {
+    margin: 0rem 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col-6.login div p {
+    display: none;
+  }
+  .col-6.login div .ikone {
+    margin: 0rem 4rem;
+  }
+}
+
+.col-6.login #sign {
   padding: 0rem 0.2rem;
   cursor: pointer;
   color: #FC4E03;
@@ -90,13 +116,53 @@
   margin-bottom: 0;
 }
 
-.col-3.login #sign:hover {
+@media screen and (max-width: 990px) {
+  .col-6.login #sign {
+    display: none;
+  }
+}
+
+.col-6.login #sign:hover {
   background-color: #FC4E03;
   color: black;
 }
 
+#hamburger {
+  position: absolute;
+  top: 25%;
+  left: 3%;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1130px) {
+  #hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #hamburger {
+    top: 20%;
+  }
+}
+
+.lajna {
+  display: block;
+  background-color: white;
+  width: 100%;
+  margin: 0.4rem 0rem;
+  height: 0.1rem;
+}
+
 #gg, #soft {
   transition: 0.3s all ease;
+}
+
+#gg img, #soft img {
+  transition: 0.3s ease;
 }
 
 #gg-menu {
@@ -113,8 +179,32 @@
   color: white;
 }
 
-#gg img, #soft img {
-  transition: 0.3s ease;
+#logo {
+  width: 450px;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 1130px) {
+  #logo {
+    width: 250px;
+    padding: 1rem;
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #logo {
+    width: 200px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #logo {
+    width: 100px;
+    padding: 1rem;
+    margin-left: 0;
+  }
 }
 
 #soft-menu {

@@ -1,5 +1,8 @@
 @import 'var';
 #nav-small{
+    @media screen and (max-width:1130px){
+        display: none;
+    }
     .col-12{
         background-color: black;
         text-align: right;
@@ -24,14 +27,12 @@
     justify-content: center;
     align-items: center;
     position: relative;
-
-    .col-5.logo{
-        padding: 1rem;
-        padding-left: 2rem;
-    }
     .col-4.nav{
+        @media screen and (max-width:1130px){
+            display: none;
+        }
         color: white;
-        margin-left: -2rem;
+        margin-left: 2rem;
         padding: 0;
         ul{
             padding-left: 0;
@@ -56,25 +57,43 @@
         }
     }
 }
-.col-3.login{
-
+.col-6.login{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-size: 0.8rem;
     font-weight: 600;
-    font-stretch: extra-condensed;
+    margin-left: auto;
     div{
         color: white;
         cursor: pointer;
+        p{
+            display: inline;
+        }
         img{
             margin-left: 0.3rem;
         }
         &:hover{
             filter: invert(0.4);
         }
+        @media screen and (max-width:1130px){
+            .ikone{
+                margin: 0rem 5rem;
+            }
+        }
+        @media screen and (max-width:768px){
+            p{
+                display: none;
+            }
+            .ikone{
+                margin: 0rem 4rem;
+            }
+        }
     }
     #sign{
+        @media screen and (max-width:990px){
+            display: none;
+        }
         padding: 0rem 0.2rem;
         cursor: pointer;
         color: $orange_btn;
@@ -86,8 +105,33 @@
         }
     }
 }
+#hamburger{
+    @media screen and (min-width:1130px){
+        display: none;
+    }
+    @media screen and (max-width:360px){
+        top: 20%;
+    }
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+.lajna{
+    display: block;
+    background-color: white;
+    width: 100%;
+    margin: 0.4rem 0rem;
+    height: 0.1rem;
+}
 #gg,#soft{
     transition: 0.3s all ease;
+}
+#gg img,#soft img{
+    transition: 0.3s ease;
 }
 #gg-menu{
     background-color: $nav_gray;
@@ -101,8 +145,23 @@
         color: white;
     }
 }
-#gg img,#soft img{
-    transition: 0.3s ease;
+#logo{
+    width: 450px;
+    margin-left: 0;
+    @media screen and (max-width: 1130px){
+        width: 250px;
+        padding: 1rem;
+        margin-left: 70px;
+    }
+    @media screen and (max-width:768px) {
+        width: 200px;
+        margin-left: 0px;
+    }
+    @media screen and (max-width:360px) {
+        width: 100px;
+        padding: 1rem;
+        margin-left: 0;
+    }
 }
 #soft-menu{
     background-color: $nav_gray;
