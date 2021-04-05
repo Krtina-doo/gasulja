@@ -14,9 +14,17 @@ function myFunction2(y) {
         logo.setAttribute('src','./images/steel.png');
     }
   }
-  
-  var x = window.matchMedia("screen and (max-width: 1130px) and (min-width:360px)");
-  var y = window.matchMedia("screen and (max-width: 359px)");
+function myFunction3(z) {
+    if (z.matches) {
+      document.getElementById('ham-menu').style.display='none';
+    }
+}
+
+  var x = window.matchMedia('screen and (max-width: 1130px) and (min-width:361px)');
+  var y = window.matchMedia('screen and (max-width: 360px)');
+  var z = window.matchMedia('screen and (min-width: 1130px)');
+  myFunction3(z);
+  z.addListener(myFunction3);
   myFunction(y);
   y.addListener(myFunction2);
   myFunction(x);

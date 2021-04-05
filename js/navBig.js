@@ -3,7 +3,10 @@ $(document).ready(function(){
     var soft = $('#soft');
     var ggMenu = $('#gg-menu');
     var softMenu = $('#soft-menu');
-    var tog = false;
+    var ham = $('#hamburger');
+    var hamMenu = $('#ham-menu');
+
+
     gg.on('click', function(){
         softMenu.hide();
         soft.removeClass('bg-nav');
@@ -11,7 +14,7 @@ $(document).ready(function(){
         ggMenu.css('display','flex');
         $(this).toggleClass('bg-nav');
         $('#gg .arrow').toggleClass('okret');
-    })
+    });
     soft.on('click', function(){
         ggMenu.hide();
         gg.removeClass('bg-nav');
@@ -19,6 +22,10 @@ $(document).ready(function(){
         softMenu.css('display','flex');
         $(this).toggleClass('bg-nav');
         $('#soft .arrow').toggleClass('okret');
-        return tog = true;
-    })
+    });
+    ham.on('click', function(){
+        hamMenu.toggle('fast');
+        $(this).toggleClass('hamklik');
+        $('body').toggleClass('scroll');
+    });
 })

@@ -110,22 +110,43 @@
         display: none;
     }
     @media screen and (max-width:360px){
+        left: 1%;
         top: 20%;
     }
     position: absolute;
     top: 25%;
     left: 3%;
     z-index: 2;
-    width: 48px;
-    height: 48px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
 }
 .lajna{
+    transition: 0.1s ease-in-out;
     display: block;
     background-color: white;
-    width: 100%;
-    margin: 0.4rem 0rem;
-    height: 0.1rem;
+    width: 20px;
+    height: 1px;
+    position: absolute;
+    &:nth-child(2){
+        top: 7px;
+    }
+    &:nth-child(3){
+        top: 14px;
+    }
+}
+.hamklik{
+    span:nth-child(1){
+        transform: rotate(45deg);
+        top: 7px;
+    }
+    span:nth-child(2){
+        opacity: 0;
+    }
+    span:nth-child(3){
+        transform: rotate(135deg);
+        top: 7px;
+    }
 }
 #gg,#soft{
     transition: 0.3s all ease;
@@ -134,15 +155,67 @@
     transition: 0.3s ease;
 }
 #gg-menu{
+    @media screen and (max-width:1130px) {
+        position: absolute;
+        top: 6%;
+        left: 0;
+        width: 100vh;
+        min-height: 60vh;
+        z-index: 2;
+        background-color: $mobnav_clr;
+    }
     background-color: $nav_gray;
     height: 3.3em;
     display: none;
     justify-content: center;
     align-items: center;
     a{
-        padding: 2em;
+        padding: 2rem;
         text-decoration: none;
         color: white;
+        @media screen and (max-width:1130px) {
+            display: block;
+            border-bottom: 2px solid gray;
+            font-size: 1.3rem;
+            padding: 0.5rem;
+        }
+    }
+}
+#supp-menu{
+    display: none;
+}
+#ham-menu{
+    display: none;
+    position: fixed;
+    top: 6%;
+    left: 0;
+    width: 100%;
+    min-height: 94%;
+    z-index: 2;
+    background-color: $mobnav_clr;
+    a{
+        display: block;
+        border-bottom: 2px solid gray;
+        font-size: 1.3rem;
+        padding: 0.5rem;
+        color: white;
+        text-decoration: none;
+        background-color: $mobnav_clr;
+        &:hover{
+            background-color: $nav_gray;
+        }
+    }
+    @media screen and (max-width:1130px) {
+        top: 12%;
+        min-height: 88%;
+    }
+    @media screen and (max-width:768px) {
+        top: 11%;
+        min-height: 89%;
+    }
+    @media screen and (max-width:360px) {
+        top: 7%;
+        min-height: 93%;
     }
 }
 #logo{
@@ -158,9 +231,9 @@
         margin-left: 0px;
     }
     @media screen and (max-width:360px) {
-        width: 100px;
-        padding: 1rem;
-        margin-left: 0;
+        width: 45px;
+        padding: 0.5rem;
+        margin-left: 5px;
     }
 }
 #soft-menu{
@@ -180,4 +253,8 @@
 }
 .bg-nav{
     background-color: $nav_gray;
+}
+.scroll{
+        height: 100%;
+        overflow-y: hidden;
 }

@@ -132,8 +132,8 @@
   top: 25%;
   left: 3%;
   z-index: 2;
-  width: 48px;
-  height: 48px;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
 }
 
@@ -145,16 +145,40 @@
 
 @media screen and (max-width: 360px) {
   #hamburger {
+    left: 1%;
     top: 20%;
   }
 }
 
 .lajna {
+  transition: 0.1s ease-in-out;
   display: block;
   background-color: white;
-  width: 100%;
-  margin: 0.4rem 0rem;
-  height: 0.1rem;
+  width: 20px;
+  height: 1px;
+  position: absolute;
+}
+
+.lajna:nth-child(2) {
+  top: 7px;
+}
+
+.lajna:nth-child(3) {
+  top: 14px;
+}
+
+.hamklik span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 7px;
+}
+
+.hamklik span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamklik span:nth-child(3) {
+  transform: rotate(135deg);
+  top: 7px;
 }
 
 #gg, #soft {
@@ -173,10 +197,81 @@
   align-items: center;
 }
 
+@media screen and (max-width: 1130px) {
+  #gg-menu {
+    position: absolute;
+    top: 6%;
+    left: 0;
+    width: 100vh;
+    min-height: 60vh;
+    z-index: 2;
+    background-color: #121212;
+  }
+}
+
 #gg-menu a {
-  padding: 2em;
+  padding: 2rem;
   text-decoration: none;
   color: white;
+}
+
+@media screen and (max-width: 1130px) {
+  #gg-menu a {
+    display: block;
+    border-bottom: 2px solid gray;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+}
+
+#supp-menu {
+  display: none;
+}
+
+#ham-menu {
+  display: none;
+  position: fixed;
+  top: 6%;
+  left: 0;
+  width: 100%;
+  min-height: 94%;
+  z-index: 2;
+  background-color: #121212;
+}
+
+#ham-menu a {
+  display: block;
+  border-bottom: 2px solid gray;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+  background-color: #121212;
+}
+
+#ham-menu a:hover {
+  background-color: #494949;
+}
+
+@media screen and (max-width: 1130px) {
+  #ham-menu {
+    top: 12%;
+    min-height: 88%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #ham-menu {
+    top: 11%;
+    min-height: 89%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #ham-menu {
+    top: 7%;
+    min-height: 93%;
+  }
 }
 
 #logo {
@@ -201,9 +296,9 @@
 
 @media screen and (max-width: 360px) {
   #logo {
-    width: 100px;
-    padding: 1rem;
-    margin-left: 0;
+    width: 45px;
+    padding: 0.5rem;
+    margin-left: 5px;
   }
 }
 
@@ -227,4 +322,9 @@
 
 .bg-nav {
   background-color: #494949;
+}
+
+.scroll {
+  height: 100%;
+  overflow-y: hidden;
 }
