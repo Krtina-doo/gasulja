@@ -1,18 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
-footer #link_name {
-  color: white !important;
-  font-size: 1rem;
-  display: flex;
-}
-
-footer #links a {
-  font-size: 1rem;
-  text-decoration: none;
-  color: #bfbfbf !important;
-  line-height: 2;
-  display: flex;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -21,4 +7,3 @@ footer #links a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/*# sourceMappingURL=main.css.map */
