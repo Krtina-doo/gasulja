@@ -25,15 +25,9 @@
 
 #nav-big {
   background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
@@ -51,16 +45,10 @@
 
 #nav-big .col-4.nav ul {
   padding-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -81,12 +69,8 @@
 
 .col-6.login {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
   font-size: 0.8rem;
   font-weight: 600;
   margin-left: auto;
@@ -162,7 +146,7 @@
 @media screen and (max-width: 360px) {
   #hamburger {
     left: 1%;
-    top: 20%;
+    top: 30%;
   }
 }
 
@@ -198,7 +182,6 @@
 }
 
 #gg, #soft {
-  -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
 
@@ -230,15 +213,11 @@
 }
 
 #gg-menu {
-  background-color: #121212;
+  background-color: #494949;
   height: 3.3em;
   display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #gg-menu div {
@@ -250,6 +229,9 @@
 }
 
 @media screen and (max-width: 1130px) {
+  #gg-menu {
+    background-color: #121212;
+  }
   #gg-menu a {
     display: block;
     border-bottom: 2px solid gray;
@@ -273,7 +255,13 @@
 
 @media screen and (max-width: 1130px) and (max-width: 640px) {
   #gg-menu a:first-child span {
-    margin-left: 30%;
+    margin-left: 32%;
+  }
+}
+
+@media screen and (max-width: 1130px) and (max-width: 360px) {
+  #gg-menu a:first-child span {
+    margin-left: 20%;
   }
 }
 
@@ -320,24 +308,27 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  #supp-menu a:first-child span {
+    margin-left: 30%;
+  }
+}
+
 #supp-menu a:first-child img {
   margin-right: auto;
 }
 
 #soft-menu {
+  color: white;
   background-color: #494949;
   height: 3.3em;
   display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #soft-menu a:first-child {
-  display: block;
+  display: none;
   font-size: 1.4rem;
   font-weight: bold;
 }
@@ -353,13 +344,23 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  #soft-menu a:first-child span {
+    margin-left: 25%;
+  }
+}
+
 #soft-menu a:first-child img {
   margin-right: auto;
 }
 
 @media screen and (max-width: 1130px) {
   #soft-menu {
+    align-items: flex-start;
     background-color: #121212;
+  }
+  #soft-menu a:first-child {
+    display: block;
   }
 }
 
@@ -409,8 +410,7 @@
 }
 
 .okret {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .bg-nav {

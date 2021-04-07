@@ -115,7 +115,7 @@
     }
     @media screen and (max-width:360px){
         left: 1%;
-        top: 20%;
+        top: 30%;
     }
     position: absolute;
     top: 35%;
@@ -191,7 +191,9 @@
     a:first-child{
         display: none;
     }
+    background-color: $nav_gray;
     @media screen and (max-width:1130px) {
+        background-color: $mobnav_clr;
         a{
             display: block;
             border-bottom: 2px solid gray;
@@ -209,7 +211,10 @@
                     margin-left: 40%;
                     transform: translate(-50%,-50%);
                     @media screen and (max-width:640px){
-                        margin-left: 30%;
+                        margin-left: 32%;
+                    }
+                    @media screen and (max-width:360px){
+                        margin-left: 20%;
                     }
                 }
                 img{
@@ -221,7 +226,6 @@
             }
         }
     }
-    background-color: $mobnav_clr;
     height: 3.3em;
     display: none;
     justify-content: center;
@@ -252,6 +256,9 @@
             @media screen and (max-width:640px){
                 margin-left: 40%;
             }
+            @media screen and (max-width:360px){
+                margin-left: 30%;
+            }
         }
         img{
             margin-right: auto;
@@ -261,8 +268,9 @@
 
 // SOFTWARE MENI
 #soft-menu{
+    color: white;
     a:first-child{
-        display: block;
+        display: none;
         font-size: 1.4rem;
         font-weight: bold;
         span{
@@ -270,6 +278,9 @@
             transform: translate(-50%,-50%);
             @media screen and (max-width:640px){
                 margin-left: 35%;
+            }
+            @media screen and (max-width:360px){
+                margin-left: 25%;
             }
         }
         img{
@@ -282,6 +293,10 @@
     justify-content: center;
     align-items: center;
     @media screen and (max-width:1130px){
+        a:first-child{
+            display: block;
+        }
+        align-items: flex-start;
         background-color: $mobnav_clr;
     }
     a{
