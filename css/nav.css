@@ -109,7 +109,8 @@
 }
 
 .col-6.login #sign {
-  padding: 0rem 0.2rem;
+  font-size: 0.7rem;
+  padding: 0.2rem;
   cursor: pointer;
   color: #FC4E03;
   border: 2px solid #FC4E03;
