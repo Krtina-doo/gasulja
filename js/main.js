@@ -1,6 +1,15 @@
 $(document).ready(function(){
     var tipkaNazad =  $('#roll-b-tipka');
     var tipkaNapr =  $('#roll-tipka');
+
+    $(window).bind('scroll', function () {
+        if ($(window).scrollTop() > 24) {
+            $('#nav-big').addClass('navscroll');
+        } else {
+            $('#nav-big').removeClass('navscroll');
+        }
+    });
+    
     $('.item').hover(function(){
         $(this).toggleClass('gore');
     });

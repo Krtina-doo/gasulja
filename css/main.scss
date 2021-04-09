@@ -10,14 +10,20 @@
     -moz-osx-font-smoothing: grayscale;
 }
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+}
+@media screen and (max-width:768px) {
+html, body {
+    position:relative;
+    overflow-x:hidden;
+  }
 }
 #main-1{
     position: relative;
     padding: 1rem 0rem;
     .bg{
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         @media screen and (max-width:768px) {
             height: 75vh;
             background-image: 
@@ -27,15 +33,13 @@ body{
         }
         cursor: pointer;
         background-image: url('/images/gallery/main_bg1.jpg');
-        background-size: cover;
+        background-size: 130%;
         background-repeat: no-repeat;
-        background-position-x: -200px;
+        background-position-x: -190px;
     }
 
     .txt{
-        position: absolute;
-        top: 5%;
-        left: 2%;
+        padding: 1rem;
         color: white;
         font-family: 'Source Sans Pro', sans-serif;
         h1{
@@ -56,7 +60,7 @@ body{
 
     .category{
         color: $mobnav_clr;
-        height: 50vh;
+        height: 45vh;
         text-align: center;
         padding-top: 2rem;
         h1{
@@ -130,6 +134,7 @@ body{
     }
 }
 #main-2{
+    overflow-x: hidden !important;
     .bg-txt{
         padding: 0rem 1rem;
         color: white;
@@ -150,45 +155,195 @@ body{
         }
     }
     #main-bg-1{
+        @media screen and (max-width:768px) {
+            height: 60vh;
+            background-position-y: 0px,0px;
+        }
         background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0)),url('/images/gallery/main_bg2.jpg');
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         position: relative;
-        padding: 0.5rem;
         background-size: cover;
         background-repeat: no-repeat;
         background-position-y: 0px,-50px;
         cursor: pointer;
+        .bg-txt{
+            padding: 1rem 1.5rem;
+        }
     }
 
     #main-bg-2{
         width: 100%;
         display: flex;
-        padding: 0.5rem 0rem;
-        .pic:nth-child(1){
+        padding-top: 1rem;
+        @media screen and (max-width:768px) {
+            display: block;
+        }
+        .pic{
             cursor: pointer;
             width: 50%;
             height: 90vh;
-            margin-right: 0.5rem;
+            background-position-y: -40px;
+            @media screen and (max-width:768px) {
+                height: 60vh;
+                width: 100%;
+                background-position-y: -40px;
+            }
+        }
+        .pic:nth-child(1){
             background-image: url('/images/gallery/bg-col-1.jpg');
             background-size: 100%;
             background-repeat: no-repeat;
-            background-position-y: -50px;
-            background-position-x: -10px;
+            background-position-x: -15px;
+            @media screen and (max-width:768px) {
+                margin-bottom: 1rem;
+                background-position-x: 0px;
+            }
         }
         .pic:nth-child(2){
-            cursor: pointer;
-            width: 50%;
-            height: 90vh;
             background-image: url('/images/gallery/bg-col-2.jpg');
             background-size: 100%;
             background-repeat: no-repeat;
-            background-position-y: -50px;
+            @media screen and (max-width:768px) {
+                margin-bottom: 1rem;
+                background-position-x: 0px;
+            }
         }
         .bg-txt{
             padding: 1rem 1.5rem;
         }
     }
+    #main-bg-3{
+        @media screen and (max-width:768px) {
+            height: 60vh;
+            background-position-x: -350px;
+        }
+        background-image: url('/images/gallery/main_bg3.jpg');
+        width: 100%;
+        height: 90vh;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: -200px;
+        cursor: pointer;
+        .bg-txt{
+            padding: 0.5rem 1rem;
+        }
+    }
+    #main-bg-4{
+        width: 100%;
+        display: flex;
+        padding: 1rem 0rem;
+        @media screen and (max-width:768px) {
+            display: block;
+        }
+        .pic{
+            cursor: pointer;
+            width: 50%;
+            height: 90vh;
+            @media screen and (max-width:768px) {
+                height: 60vh;
+                width: 100%;
+                background-position-y: -40px;
+            }
+        }
+        .pic:nth-child(1){
+            background-image: url('/images/gallery/bg-col2-1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-x: -15px;
+            @media screen and (max-width:768px) {
+                margin-bottom: 1rem;
+                background-position-x: 0px;
+            }
+        }
+        .pic:nth-child(2){
+            background-image: url('/images/gallery/bg-col2-2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        .bg-txt{
+            padding: 1rem 1.5rem;
+        }
+    }
+    #main-bg-5{
+        @media screen and (max-width:768px) {
+            height: 60vh;
+            background-position-x: 0px,-350px;
+        }
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.5),rgba(0,0,0,0)),url('/images/gallery/main_bg4.jpg');
+        width: 100%;
+        height: 90vh;
+        position: relative;
+        padding-bottom: 1rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 0px,-200px;
+        cursor: pointer;
+        .bg-txt{
+            padding: 0.5rem 1rem;
+        }
+    }
+    #main-bg-6{
+        width: 100%;
+        display: flex;
+        padding: 0rem;
+        padding-top: 1rem;
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+        }
+        .pic{
+            cursor: pointer;
+            width: 33%;
+            height: 90vh;
+            margin: 0rem 0.5rem;
+            @media screen and (max-width:768px) {
+                height: 60vh;
+                width: 100%;
+                margin: 0rem;
+                margin-bottom: 1rem;
+            }
+        }
+        .pic:nth-child(1){
+            background-image: url('/images/gallery/bg-col3-1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-x: -110px;
+            margin-left: 0rem;
+            @media screen and (max-width:768px) {
+                background-position-x: 0px;
+            }
+        }
+        .pic:nth-child(2){
+            background-image: url('/images/gallery/bg-col3-2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-x: -90px;
+            @media screen and (max-width:768px) {
+                background-position-x: 0px;
+            }
+        }
+        .pic:nth-child(3){
+            background-image: url('/images/gallery/bg-col3-3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-x: -95px;
+            margin-right: 0rem;
+            @media screen and (max-width:768px) {
+                background-position-x: 0px;
+            }
+        }
+        .bg-txt{
+            padding: 1rem 1.5rem;
+        }
+    }
+}
+.navscroll{
+    width: 100%;
+    position: fixed !important;
+    z-index: 2;
+    top: 0;
 }
 .gore{
     margin-top: -5px;

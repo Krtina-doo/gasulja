@@ -10,7 +10,14 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+}
+
+@media screen and (max-width: 768px) {
+  html, body {
+    position: relative;
+    overflow-x: hidden;
+  }
 }
 
 #main-1 {
@@ -20,12 +27,12 @@ body {
 
 #main-1 .bg {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   cursor: pointer;
   background-image: url("/images/gallery/main_bg1.jpg");
-  background-size: cover;
+  background-size: 130%;
   background-repeat: no-repeat;
-  background-position-x: -200px;
+  background-position-x: -190px;
 }
 
 @media screen and (max-width: 768px) {
@@ -37,9 +44,7 @@ body {
 }
 
 #main-1 .txt {
-  position: absolute;
-  top: 5%;
-  left: 2%;
+  padding: 1rem;
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -66,7 +71,7 @@ body {
 
 #main-1 .category {
   color: #121212;
-  height: 50vh;
+  height: 45vh;
   text-align: center;
   padding-top: 2rem;
 }
@@ -151,6 +156,10 @@ body {
   font-weight: 600;
 }
 
+#main-2 {
+  overflow-x: hidden !important;
+}
+
 #main-2 .bg-txt {
   padding: 0rem 1rem;
   color: white;
@@ -180,45 +189,257 @@ body {
 #main-2 #main-bg-1 {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent), url("/images/gallery/main_bg2.jpg");
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   position: relative;
-  padding: 0.5rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 0px,-50px;
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  #main-2 #main-bg-1 {
+    height: 60vh;
+    background-position-y: 0px,0px;
+  }
+}
+
+#main-2 #main-bg-1 .bg-txt {
+  padding: 1rem 1.5rem;
+}
+
 #main-2 #main-bg-2 {
   width: 100%;
   display: flex;
-  padding: 0.5rem 0rem;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  #main-2 #main-bg-2 {
+    display: block;
+  }
+}
+
+#main-2 #main-bg-2 .pic {
+  cursor: pointer;
+  width: 50%;
+  height: 90vh;
+  background-position-y: -40px;
+}
+
+@media screen and (max-width: 768px) {
+  #main-2 #main-bg-2 .pic {
+    height: 60vh;
+    width: 100%;
+    background-position-y: -40px;
+  }
 }
 
 #main-2 #main-bg-2 .pic:nth-child(1) {
-  cursor: pointer;
-  width: 50%;
-  height: 90vh;
-  margin-right: 0.5rem;
   background-image: url("/images/gallery/bg-col-1.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position-y: -50px;
-  background-position-x: -10px;
+  background-position-x: -15px;
+}
+
+@media screen and (max-width: 768px) {
+  #main-2 #main-bg-2 .pic:nth-child(1) {
+    margin-bottom: 1rem;
+    background-position-x: 0px;
+  }
 }
 
 #main-2 #main-bg-2 .pic:nth-child(2) {
-  cursor: pointer;
-  width: 50%;
-  height: 90vh;
   background-image: url("/images/gallery/bg-col-2.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position-y: -50px;
+}
+
+@media screen and (max-width: 768px) {
+  #main-2 #main-bg-2 .pic:nth-child(2) {
+    margin-bottom: 1rem;
+    background-position-x: 0px;
+  }
 }
 
 #main-2 #main-bg-2 .bg-txt {
   padding: 1rem 1.5rem;
+}
+
+#main-2 #main-bg-3 {
+  background-image: url("/images/gallery/main_bg3.jpg");
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -200px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  #main-2 #main-bg-3 {
+    height: 60vh;
+    background-position-x: -350px;
+  }
+}
+
+#main-2 #main-bg-3 .bg-txt {
+  padding: 0.5rem 1rem;
+}
+
+#main-2 #main-bg-4 {
+  width: 100%;
+  display: flex;
+  padding: 1rem 0rem;
+}
+
+@media screen and (max-width: 768px) {
+  #main-2 #main-bg-4 {
+    display: block;
+  }
+}
+
+#main-2 #main-bg-4 .pic {
+  cursor: pointer;
+  width: 50%;
+  height: 90vh;
+}
+
+@media screen and (max-width: 768px) {
+  #main-2 #main-bg-4 .pic {
+    height: 60vh;
+    width: 100%;
+    background-position-y: -40px;
+  }
+}
+
+#main-2 #main-bg-4 .pic:nth-child(1) {
+  background-image: url("/images/gallery/bg-col2-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -15px;
+}
+
+@media screen and (max-width: 768px) {
+  #main-2 #main-bg-4 .pic:nth-child(1) {
+    margin-bottom: 1rem;
+    background-position-x: 0px;
+  }
+}
+
+#main-2 #main-bg-4 .pic:nth-child(2) {
+  background-image: url("/images/gallery/bg-col2-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#main-2 #main-bg-4 .bg-txt {
+  padding: 1rem 1.5rem;
+}
+
+#main-2 #main-bg-5 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent), url("/images/gallery/main_bg4.jpg");
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  padding-bottom: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 0px,-200px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  #main-2 #main-bg-5 {
+    height: 60vh;
+    background-position-x: 0px,-350px;
+  }
+}
+
+#main-2 #main-bg-5 .bg-txt {
+  padding: 0.5rem 1rem;
+}
+
+#main-2 #main-bg-6 {
+  width: 100%;
+  display: flex;
+  padding: 0rem;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  #main-2 #main-bg-6 {
+    flex-direction: column;
+  }
+}
+
+#main-2 #main-bg-6 .pic {
+  cursor: pointer;
+  width: 33%;
+  height: 90vh;
+  margin: 0rem 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  #main-2 #main-bg-6 .pic {
+    height: 60vh;
+    width: 100%;
+    margin: 0rem;
+    margin-bottom: 1rem;
+  }
+}
+
+#main-2 #main-bg-6 .pic:nth-child(1) {
+  background-image: url("/images/gallery/bg-col3-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -110px;
+  margin-left: 0rem;
+}
+
+@media screen and (max-width: 768px) {
+  #main-2 #main-bg-6 .pic:nth-child(1) {
+    background-position-x: 0px;
+  }
+}
+
+#main-2 #main-bg-6 .pic:nth-child(2) {
+  background-image: url("/images/gallery/bg-col3-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -90px;
+}
+
+@media screen and (max-width: 768px) {
+  #main-2 #main-bg-6 .pic:nth-child(2) {
+    background-position-x: 0px;
+  }
+}
+
+#main-2 #main-bg-6 .pic:nth-child(3) {
+  background-image: url("/images/gallery/bg-col3-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -95px;
+  margin-right: 0rem;
+}
+
+@media screen and (max-width: 768px) {
+  #main-2 #main-bg-6 .pic:nth-child(3) {
+    background-position-x: 0px;
+  }
+}
+
+#main-2 #main-bg-6 .bg-txt {
+  padding: 1rem 1.5rem;
+}
+
+.navscroll {
+  width: 100%;
+  position: fixed !important;
+  z-index: 2;
+  top: 0;
 }
 
 .gore {
