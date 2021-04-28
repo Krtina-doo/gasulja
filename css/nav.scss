@@ -28,12 +28,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    .col-4.nav{
+    .col-3.nav{
         @media screen and (max-width:1130px){
             display: none;
         }
         color: white;
-        margin-left: 2rem;
         padding: 0;
         ul{
             padding-left: 0;
@@ -59,7 +58,8 @@
     }
 }
 // DESNA SEKCIJA SA IKONAMA
-.col-6.login{
+.col-4.login{
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -80,7 +80,7 @@
         }
         @media screen and (max-width:1130px){
             .ikone{
-                margin: 0rem 5rem;
+                margin: 0rem 3rem;
             }
         }
         @media screen and (max-width:768px){
@@ -88,7 +88,7 @@
                 display: none;
             }
             .ikone{
-                margin: 0rem 4rem;
+                margin: 0rem 2rem;
             }
         }
     }
@@ -354,8 +354,8 @@
     display: flex;
     background-color: $mobnav_clr;
     @media screen and (max-width:1130px) {
-        top: 11%;
-        min-height: 89%;
+        top: 62px;
+        min-height: 94%;
         a{
             display: block;
             border-bottom: 2px solid gray;
@@ -370,7 +370,7 @@
         }
     }
     @media screen and (max-width:768px) {
-        top: 10%;
+        top: 55px;
         min-height: 90%;
     }
     @media screen and (max-width:360px) {

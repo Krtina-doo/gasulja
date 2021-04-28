@@ -23,7 +23,7 @@ html, body {
     padding: 1rem 0rem;
     .bg{
         width: 100%;
-        height: 90vh;
+        height: 60vh;
         @media screen and (max-width:768px) {
             height: 75vh;
             background-image: 
@@ -33,9 +33,9 @@ html, body {
         }
         cursor: pointer;
         background-image: url('/images/gallery/main_bg1.jpg');
-        background-size: 130%;
+        background-size: 100%;
         background-repeat: no-repeat;
-        background-position-x: -190px;
+        background-position-y: -70px;
     }
 
     .txt{
@@ -60,7 +60,7 @@ html, body {
 
     .category{
         color: $mobnav_clr;
-        height: 45vh;
+        height: 35vh;
         text-align: center;
         padding-top: 2rem;
         h1{
@@ -112,7 +112,7 @@ html, body {
         .item{
             transition: 200ms margin ease;
             cursor: pointer;
-            padding: 0 40px;
+            padding: 0 80px;
             @media screen and (max-width:1200px) {
                 display: none;
                 &:nth-child(1), &:nth-child(2), &:nth-child(3){
@@ -156,16 +156,16 @@ html, body {
     }
     #main-bg-1{
         @media screen and (max-width:768px) {
-            height: 60vh;
+            min-height: 450px;
             background-position-y: 0px,0px;
         }
         background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0)),url('/images/gallery/main_bg2.jpg');
         width: 100%;
-        height: 90vh;
+        min-height: 600px;
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position-y: 0px,-50px;
+        background-position-y: 0px,-250px;
         cursor: pointer;
         .bg-txt{
             padding: 1rem 1.5rem;
@@ -182,10 +182,10 @@ html, body {
         .pic{
             cursor: pointer;
             width: 50%;
-            height: 90vh;
-            background-position-y: -40px;
+            min-height: 600px;
+            background-position-y: -340px;
             @media screen and (max-width:768px) {
-                height: 60vh;
+                min-height: 450px;
                 width: 100%;
                 background-position-y: -40px;
             }
@@ -215,16 +215,17 @@ html, body {
     }
     #main-bg-3{
         @media screen and (max-width:768px) {
-            height: 60vh;
-            background-position-x: -350px;
+            min-height: 450px;
+            background-position-y: -10px;
         }
         background-image: url('/images/gallery/main_bg3.jpg');
         width: 100%;
-        height: 90vh;
+        min-height: 600px;
+        margin-top: 1rem;
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position-x: -200px;
+        background-position-y: -50px;
         cursor: pointer;
         .bg-txt{
             padding: 0.5rem 1rem;
@@ -240,9 +241,9 @@ html, body {
         .pic{
             cursor: pointer;
             width: 50%;
-            height: 90vh;
+            min-height: 600px;
             @media screen and (max-width:768px) {
-                height: 60vh;
+                min-height: 450px;
                 width: 100%;
                 background-position-y: -40px;
             }
@@ -251,7 +252,8 @@ html, body {
             background-image: url('/images/gallery/bg-col2-1.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            background-position-x: -15px;
+            background-position-x: -300px;
+            margin-right: 0.5rem;
             @media screen and (max-width:768px) {
                 margin-bottom: 1rem;
                 background-position-x: 0px;
@@ -261,7 +263,8 @@ html, body {
             background-image: url('/images/gallery/bg-col2-2.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            
+            background-position-y: -200px;
+            margin-left: 0.5rem;
         }
         .bg-txt{
             padding: 1rem 1.5rem;
@@ -269,17 +272,16 @@ html, body {
     }
     #main-bg-5{
         @media screen and (max-width:768px) {
-            height: 60vh;
+            min-height: 450px;
             background-position-x: 0px,-350px;
         }
         background-image: linear-gradient(to bottom, rgba(0,0,0,0.5),rgba(0,0,0,0)),url('/images/gallery/main_bg4.jpg');
         width: 100%;
-        height: 90vh;
+        min-height: 600px;
         position: relative;
         padding-bottom: 1rem;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position-x: 0px,-200px;
         cursor: pointer;
         .bg-txt{
             padding: 0.5rem 1rem;
@@ -296,10 +298,10 @@ html, body {
         .pic{
             cursor: pointer;
             width: 33%;
-            height: 90vh;
+            min-height: 600px;
             margin: 0rem 0.5rem;
             @media screen and (max-width:768px) {
-                height: 60vh;
+                min-height: 450px;
                 width: 100%;
                 margin: 0rem;
                 margin-bottom: 1rem;
@@ -309,30 +311,18 @@ html, body {
             background-image: url('/images/gallery/bg-col3-1.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            background-position-x: -110px;
             margin-left: 0rem;
-            @media screen and (max-width:768px) {
-                background-position-x: 0px;
-            }
         }
         .pic:nth-child(2){
             background-image: url('/images/gallery/bg-col3-2.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            background-position-x: -90px;
-            @media screen and (max-width:768px) {
-                background-position-x: 0px;
-            }
         }
         .pic:nth-child(3){
             background-image: url('/images/gallery/bg-col3-3.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            background-position-x: -95px;
             margin-right: 0rem;
-            @media screen and (max-width:768px) {
-                background-position-x: 0px;
-            }
         }
         .bg-txt{
             padding: 1rem 1.5rem;
@@ -344,6 +334,12 @@ html, body {
     position: fixed !important;
     z-index: 2;
     top: 0;
+}
+.menuscroll{
+    width: 100%;
+    position: fixed !important;
+    z-index: 2;
+    top: 73px;
 }
 .gore{
     margin-top: -5px;

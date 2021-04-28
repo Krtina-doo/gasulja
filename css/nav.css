@@ -31,19 +31,18 @@
   position: relative;
 }
 
-#nav-big .col-4.nav {
+#nav-big .col-3.nav {
   color: white;
-  margin-left: 2rem;
   padding: 0;
 }
 
 @media screen and (max-width: 1130px) {
-  #nav-big .col-4.nav {
+  #nav-big .col-3.nav {
     display: none;
   }
 }
 
-#nav-big .col-4.nav ul {
+#nav-big .col-3.nav ul {
   padding-left: 0;
   display: flex;
   list-style: none;
@@ -53,7 +52,7 @@
   margin-bottom: 0;
 }
 
-#nav-big .col-4.nav ul li {
+#nav-big .col-3.nav ul li {
   padding: 2.3rem 1rem;
   text-align: center;
   display: block;
@@ -63,11 +62,12 @@
   cursor: pointer;
 }
 
-#nav-big .col-4.nav ul li img {
+#nav-big .col-3.nav ul li img {
   margin-left: 0.5rem;
 }
 
-.col-6.login {
+.col-4.login {
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -76,39 +76,39 @@
   margin-left: auto;
 }
 
-.col-6.login div {
+.col-4.login div {
   color: white;
   cursor: pointer;
 }
 
-.col-6.login div p {
+.col-4.login div p {
   display: inline;
 }
 
-.col-6.login div img {
+.col-4.login div img {
   margin-left: 0.3rem;
 }
 
-.col-6.login div:hover {
+.col-4.login div:hover {
   filter: invert(0.4);
 }
 
 @media screen and (max-width: 1130px) {
-  .col-6.login div .ikone {
-    margin: 0rem 5rem;
+  .col-4.login div .ikone {
+    margin: 0rem 3rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .col-6.login div p {
+  .col-4.login div p {
     display: none;
   }
-  .col-6.login div .ikone {
-    margin: 0rem 4rem;
+  .col-4.login div .ikone {
+    margin: 0rem 2rem;
   }
 }
 
-.col-6.login #sign {
+.col-4.login #sign {
   font-size: 0.7rem;
   padding: 0.2rem;
   cursor: pointer;
@@ -118,12 +118,12 @@
 }
 
 @media screen and (max-width: 990px) {
-  .col-6.login #sign {
+  .col-4.login #sign {
     display: none;
   }
 }
 
-.col-6.login #sign:hover {
+.col-4.login #sign:hover {
   background-color: #FC4E03;
   color: black;
 }
@@ -436,8 +436,8 @@
 
 @media screen and (max-width: 1130px) {
   .mobmeni {
-    top: 11%;
-    min-height: 89%;
+    top: 62px;
+    min-height: 94%;
   }
   .mobmeni a {
     display: block;
@@ -455,7 +455,7 @@
 
 @media screen and (max-width: 768px) {
   .mobmeni {
-    top: 10%;
+    top: 55px;
     min-height: 90%;
   }
 }
